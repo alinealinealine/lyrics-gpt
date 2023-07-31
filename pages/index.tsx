@@ -412,7 +412,7 @@ export default function Home() {
               </div>
             ) : (
               <div className="mt-6 text-center text-lg" style={{ fontWeight: 'bold' }}>
-                AI-powered search & chat for My Little Airport's songs.
+                  AI-powered search & chat for My Little Airport&apos;s songs.
                 </div>
             )}
           </div>
