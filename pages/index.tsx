@@ -215,6 +215,14 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
+      <style jsx global>{`
+        body {
+          background-image: url('/cover.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      `}</style>
 
       <div className="flex flex-col h-screen">
         <Navbar />
