@@ -212,7 +212,7 @@ export default function Home() {
         />
         <link
           rel="icon"
-          href="/favicon.ico"
+          href="/favicon_new.ico"
         />
       </Head>
       <style jsx global>{`
@@ -411,8 +411,9 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for My Little Airport's songs.`}</div>
-
+              <div className="mt-6 text-center text-lg" style={{ fontWeight: 'bold' }}>
+                AI-powered search & chat for My Little Airport's songs.
+                </div>
             )}
           </div>
         </div>
