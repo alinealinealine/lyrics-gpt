@@ -201,7 +201,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Paul Graham GPT</title>
+        <title>My Little Airport GPT</title>
         <meta
           name="description"
           content={`AI-powered search and chat for My Little Airport's song lyrics.`}
@@ -403,7 +403,7 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for Paul Graham's essays.`}</div>
+              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for My Little Airport's essays.`}</div>
             )}
           </div>
         </div>
