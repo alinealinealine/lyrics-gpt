@@ -201,7 +201,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Paul Graham GPT</title>
+        <title>My Little Airport GPT</title>
         <meta
           name="description"
           content={`AI-powered search and chat for My Little Airport's song lyrics.`}
