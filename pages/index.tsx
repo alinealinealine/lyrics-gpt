@@ -216,12 +216,20 @@ export default function Home() {
         />
       </Head>
       <style jsx global>{`
-        body {
-          background-image: url('/cover.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
+      body::before {
+        content: "";
+        position: fixed; /* Fixed/sticky position */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('/cover.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.83; /* Transparency level */
+        z-index: -1; /* Place it behind the content */
+      }
       `}</style>
 
       <div className="flex flex-col h-screen">
@@ -387,7 +395,7 @@ export default function Home() {
               </div>
             ) : chunks.length > 0 ? (
               <div className="mt-6 pb-16">
-                <div className="font-bold text-2xl">Passages</div>
+                <div className="font-bold text-2xl">Full Lyrics</div>
                 {chunks.map((chunk, index) => (
                   <div key={index}>
                     <div className="mt-4 border border-zinc-600 rounded-lg p-4">

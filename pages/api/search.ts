@@ -26,7 +26,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const { data: chunks, error } = await supabaseAdmin.rpc("lyrics_mla_search", {
       query_embedding: embedding,
-      similarity_threshold: 0.5,
+      similarity_threshold: 0.1,
       match_count: 5
     });
 
